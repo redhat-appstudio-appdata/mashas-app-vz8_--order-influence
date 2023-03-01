@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ofiw
+  namespace: marialeonova-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:65c6947033beb02ee4b93745cbc895b5566bc06b66963c7b949464b60cfa2ed0
+        name: my-nodejs
+        resources: {}
+status: {}
